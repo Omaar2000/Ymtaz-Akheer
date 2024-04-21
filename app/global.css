@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Example global CSS file */
+@import "@fontsource/almarai";
+
+body {
+  color: #2d4768;
+  background-color: #f9f9f9;
+}
+
+.navLink {
+  color: #2d4768;
+  font-weight: 500;
+}
+
+.box {
+  height: 14rem;
+}
+
+.box:hover {
+  background: linear-gradient(to bottom right, #ddb762, #6b5220);
+}
+.box:hover h2,
+.box:hover h6,
+.box:hover path {
+  color: white;
+}
+.box:hover path {
+  fill: white;
+  stroke: white;
+}
+.box:hover circle {
+  fill: white;
+  stroke: white;
+}
+.box:hover div {
+  box-shadow: 40px 50px 145px 10px rgb(255, 255, 255);
+}
+
+.box:hover.iconBox {
+  background: linear-gradient(to bottom right, #ddb762, #53411c);
+}
+
+.box:hover .name path {
+  fill: #1d9bf0;
+  stroke: #1d9bf0;
+}
+.box:hover .rev path {
+  fill: #fbb400;
+  stroke: #fbb400;
+}
