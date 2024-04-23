@@ -34,8 +34,11 @@ const Component2 = () => {
       const date = getNextDate(i - 1);
       days.push(
         <>
-          <div key={i} className="text-center w-40 gap-1 text-[#999888]">
-            <div className="bg-[#DDB762] text-[#fff] px-8 py-2 rounded-t ">
+          <div
+            key={i}
+            className="text-center w-36 md:w-32 sm:w-24 gap-1 text-[#999888]"
+          >
+            <div className="bg-[#DDB762] text-[#fff]  py-2 rounded-t ">
               {(dayIndex == "0" && "اليوم") ||
                 (dayIndex == "1" && "غدًا") ||
                 arabicDays[dayIndex]}
