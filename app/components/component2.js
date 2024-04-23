@@ -8,13 +8,13 @@ const Component2 = () => {
   const daysPerPage = 3;
   const totalDays = 7;
   const arabicDays = [
-    "الأحد",
-    "الاثنين",
     "الثلاثاء",
     "الأربعاء",
     "الخميس",
     "الجمعة",
     "السبت",
+    "الأحد",
+    "الاثنين",
   ];
 
   const nextPage = () => {
