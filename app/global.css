@@ -7,7 +7,7 @@
 
 body {
   color: #2d4768;
-  background-color: #f9f9f9;
+  all: #f9f9f9;
 }
 
 .navLink {
@@ -41,6 +41,7 @@ body {
 
 .box:hover.iconBox {
   background: linear-gradient(to bottom right, #ddb762, #53411c);
+  transition: all 3s linear;
 }
 
 .box:hover .name path {
@@ -50,4 +51,11 @@ body {
 .box:hover .rev path {
   fill: #fbb400;
   stroke: #fbb400;
+}
+
+@media (min-width: 450px) {
+  .details {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }
