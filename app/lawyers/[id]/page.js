@@ -9,12 +9,12 @@ const Details = () => {
   const [activeButton, setActiveButton] = useState(1);
   return (
     <>
-      <div className="flex gap-4 mx-8">
+      <div className="details flex gap-4 mx-8 xl:flex-row sm:flex-col-reverse">
         {/* First section */}
-        <div className="w-1/2 ">
+        <div className="xl:w-1/2 md:w-full mb-4">
           <div className="bg-[#f9f9f9] rounded">
-            <div className="h-full flex flex-col ">
-              <div className="mb-0.5 bg-[#fff] ">
+            <div className="h-full flex flex-col">
+              <div className="mb-0.5 bg-[#fff]">
                 <h2 className="text-xl font-semibold text-end mr-8 my-4">
                   معلومات الحجز
                 </h2>
@@ -33,9 +33,8 @@ const Details = () => {
                     >
                       أوقات العمل
                     </button>
-
                     <button
-                      className={`font-semibold px-4 py-4 ml-2   ${
+                      className={`font-semibold px-4 py-4 ml-2 ${
                         activeButton === 2
                           ? "border-b-2 border-[#2d4768]"
                           : "text-gray-200 "
@@ -55,7 +54,8 @@ const Details = () => {
             </div>
           </div>
         </div>
-        <div className="w-1/2">
+
+        <div className="xl:w-1/2 md:w-full">
           <div className="bg-[#f9f9f9] rounded">
             <div className="h-full flex flex-col ">
               <div className="mb-4 bg-[#fff]">
